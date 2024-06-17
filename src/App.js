@@ -4,6 +4,7 @@ import Box from './component/Box'
 import Try from './component/Try'
 import Change from './component/Change';
 import Text from './component/Text'
+import State from './component/State'
 function App() {
   let response = [
     {
@@ -68,6 +69,7 @@ function App() {
             </Try>
             <Change></Change>
             <Text></Text>
+            <State></State>
       </Box>
     </div>
   );
