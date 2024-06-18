@@ -5,6 +5,7 @@ import Try from './component/Try'
 import Change from './component/Change';
 import Text from './component/Text'
 import State from './component/State'
+import Child from './component/Child';
 function App() {
   let response = [
     {
@@ -33,6 +34,10 @@ function App() {
       rollNumber : 105,
     }
   ]
+
+  function getChild(data) {
+    console.log("Received data in App:", data);
+  }
   return (
     <div>
       <Box>
@@ -70,6 +75,7 @@ function App() {
             <Change></Change>
             <Text></Text>
             <State></State>
+            <Child printChild={getChild}></Child>
       </Box>
     </div>
   );
