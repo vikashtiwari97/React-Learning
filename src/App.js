@@ -6,6 +6,7 @@ import Change from './component/Change';
 import Text from './component/Text'
 import State from './component/State'
 import Child from './component/Child';
+import Main from './counter/Main';
 function App() {
   let response = [
     {
@@ -41,7 +42,7 @@ function App() {
   return (
     <div>
       <Box>
-      <div className="App">
+      {/* <div className="App">
                 Learning Project
             </div>
             <hr/>
@@ -75,7 +76,8 @@ function App() {
             <Change></Change>
             <Text></Text>
             <State></State>
-            <Child printChild={getChild}></Child>
+            <Child printChild={getChild}></Child> */}
+            <Main></Main>
       </Box>
     </div>
   );
